@@ -8,8 +8,7 @@ from IPython.display import Image
 
 Data saved as pickle files: `bjp_tweets.pkl` and `congress_tweets.pkl` . All images are being dynamically screenshotted using an api (all keys removed for privacy).
 Image files have relevant names and saved in the folder. 
-Find all the files here:[https://github.com/fireballpoint1/BDPassignment4][https://github.com/fireballpoint1/BDPassignment4] 
-
+Find all the files here:  https://github.com/fireballpoint1/BDPassignment4
 
 ```python
 import tweepy
