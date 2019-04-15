@@ -15,10 +15,10 @@ Find all the files here:
 import tweepy
 
 # Consumer keys and access tokens, used for OAuth
-consumer_key = 'VZqEYmmm7uhj35mnVaTWDYr4i'
-consumer_secret = 'bv2e0He3Y1UmlmJKxL6nchDfZh8SdgkgYzsRk52dkbFGKovRry'
-access_token = '3241382239-CHUQiSZEuQZJ5ogR9haTS05O2WBBNV7VB9N2gRs'
-access_token_secret = 'XGT2NfdPd10nEryg4vTJ1HQhoAomUjMi4fAkpAQ2zhkFC'
+consumer_key = ''
+consumer_secret = ''
+access_token = ''
+access_token_secret = ''
 
 # OAuth process, using the keys and tokens
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
@@ -65,7 +65,7 @@ from urllib.parse import urlencode
 from urllib.request import urlretrieve
 from IPython.display import Image
 
-params = urlencode(dict(access_key="ed9b4d00816249878adf785744b55465",
+params = urlencode(dict(access_key="",
                         url='https://twitter.com/BJP4India/status/' + str(ID)))
 urlretrieve("https://api.apiflash.com/v1/urltoimage?" + params, "most_liked_tweet.jpeg")
 
