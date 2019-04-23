@@ -36,11 +36,13 @@ like_data=[]
 for i in data['GraphImages']:
     #     if(i['edge_media_preview_like']['count']>likes):
     likes=i['edge_media_preview_like']['count']
+    comments=i['edge_media_to_comment']['count']
     ID=i['shortcode']
-    like_data.append({'shortcode':ID,'likes':likes})
+    like_data.append({'shortcode':ID,'likes':likes,'comments':comments})
 # print("likes =",likes,"ID =",ID)
 # print(like_data)
 sorted_like_data=sorted(like_data, key = lambda i: i['likes'],reverse=True)
+sorted_comment_data=sorted(like_data, key = lambda i: i['comments'],reverse=True)
 # print(sorted_like_data)
 ```
 
@@ -62,13 +64,36 @@ def get_screenshot(ID,name):
 
 ```python
 get_screenshot(sorted_like_data[0]['shortcode'],"most_liked_inc.jpeg")
+print("Most likes")
 Image(filename="most_liked_inc.jpeg") 
+
 ```
 
+    Most likes
 
 
 
-![jpeg](output_5_0.jpeg)
+
+
+![jpeg](output_5_1.jpeg)
+
+
+
+
+```python
+get_screenshot(sorted_comment_data[0]['shortcode'],"most_commented_inc.jpeg")
+print("Most comments")
+Image(filename="most_commented_inc.jpeg") 
+
+```
+
+    Most comments
+
+
+
+
+
+![jpeg](output_6_1.jpeg)
 
 
 
@@ -100,7 +125,7 @@ Image(filename="most_popu_inc.jpeg")
 
 
 
-![jpeg](output_8_0.jpeg)
+![jpeg](output_9_0.jpeg)
 
 
 
@@ -113,7 +138,7 @@ Image(filename="most_popu1_inc.jpeg")
 
 
 
-![jpeg](output_9_0.jpeg)
+![jpeg](output_10_0.jpeg)
 
 
 
@@ -126,7 +151,7 @@ Image(filename="most_popu_inc2.jpeg")
 
 
 
-![jpeg](output_10_0.jpeg)
+![jpeg](output_11_0.jpeg)
 
 
 
@@ -139,7 +164,7 @@ Image(filename="most_popu_inc3.jpeg")
 
 
 
-![jpeg](output_11_0.jpeg)
+![jpeg](output_12_0.jpeg)
 
 
 
@@ -152,7 +177,7 @@ Image(filename="most_popu_inc4.jpeg")
 
 
 
-![jpeg](output_12_0.jpeg)
+![jpeg](output_13_0.jpeg)
 
 
 
@@ -234,7 +259,7 @@ plt.show()
 ```
 
 
-![png](output_18_0.png)
+![png](output_19_0.png)
 
 
 
@@ -296,7 +321,7 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![png](output_23_0.png)
 
 
 
@@ -342,7 +367,7 @@ Image(filename="most_popu_explore.jpeg")
 
 
 
-![jpeg](output_27_0.jpeg)
+![jpeg](output_28_0.jpeg)
 
 
 
@@ -355,7 +380,7 @@ Image(filename="most_popu_explore1.jpeg")
 
 
 
-![jpeg](output_28_0.jpeg)
+![jpeg](output_29_0.jpeg)
 
 
 
@@ -368,7 +393,7 @@ Image(filename="most_popu_explore2.jpeg")
 
 
 
-![jpeg](output_29_0.jpeg)
+![jpeg](output_30_0.jpeg)
 
 
 
@@ -381,7 +406,7 @@ Image(filename="most_popu_explore3.jpeg")
 
 
 
-![jpeg](output_30_0.jpeg)
+![jpeg](output_31_0.jpeg)
 
 
 
@@ -394,7 +419,7 @@ Image(filename="most_popu_explore4.jpeg")
 
 
 
-![jpeg](output_31_0.jpeg)
+![jpeg](output_32_0.jpeg)
 
 
 
@@ -429,5 +454,5 @@ plt.show()
 ```
 
 
-![png](output_34_0.png)
+![png](output_35_0.png)
 

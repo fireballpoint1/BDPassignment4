@@ -1,6 +1,7 @@
 # Solutions
 
 All solutions are in the respective folders part1 and part2 with apt README to avoid running the jupyter notebooks. 
+Source files can be found in `part<x>/source/` directory which contaings all the jupyter notebooks and data collected.
 
 # Assignment 4 - Big Data and Policing - IIIT H
 Deadline - 12 April, 2019
